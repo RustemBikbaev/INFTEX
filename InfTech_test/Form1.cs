@@ -191,8 +191,7 @@ namespace InfTech_test
             /*--------- 2. draw node text ---------*/
             Font nodeFont = e.Node.NodeFont;       
             if (nodeFont == null)
-                nodeFont = ((TreeView)sender).Font;
-            
+                nodeFont = ((TreeView)sender).Font;          
             Brush textBrush = SystemBrushes.WindowText;
             //to highlight the text when selected
             if ((e.State & TreeNodeStates.Focused) != 0)
