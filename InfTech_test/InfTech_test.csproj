@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{175CCCB5-355E-4415-98EB-5330E35C10E9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>InfTech_test</RootNamespace>
+    <AssemblyName>InfTech_test</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DatabaseDataSet.Designer.cs">
+      <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Expansion2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Expansion2.Designer.cs">
+      <DependentUpon>Expansion2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="File_contents.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="File_contents.Designer.cs">
+      <DependentUpon>File_contents.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Create_dir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Create_dir.Designer.cs">
+      <DependentUpon>Create_dir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delete_dir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete_dir.Designer.cs">
+      <DependentUpon>Delete_dir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rename.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rename.Designer.cs">
+      <DependentUpon>Rename.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rename_File.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rename_File.Designer.cs">
+      <DependentUpon>Rename_File.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rename_Folder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rename_Folder.Designer.cs">
+      <DependentUpon>Rename_Folder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Upload_file.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Upload_file.Designer.cs">
+      <DependentUpon>Upload_file.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Download_file.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Download_file.Designer.cs">
+      <DependentUpon>Download_file.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delete_file.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete_file.Designer.cs">
+      <DependentUpon>Delete_file.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Delete_file.resx">
+      <DependentUpon>Delete_file.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Download_file.resx">
+      <DependentUpon>Download_file.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Expansion2.resx">
+      <DependentUpon>Expansion2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="File_contents.resx">
+      <DependentUpon>File_contents.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Create_dir.resx">
+      <DependentUpon>Create_dir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete_dir.resx">
+      <DependentUpon>Delete_dir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Rename.resx">
+      <DependentUpon>Rename.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rename_File.resx">
+      <DependentUpon>Rename_File.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rename_Folder.resx">
+      <DependentUpon>Rename_Folder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Upload_file.resx">
+      <DependentUpon>Upload_file.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DatabaseDataSet.xsc">
+      <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DatabaseDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DatabaseDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DatabaseDataSet.xss">
+      <DependentUpon>DatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 и x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
